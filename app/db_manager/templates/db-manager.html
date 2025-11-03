@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+{% block content %}
+<div class="dashboard-db-manager">
+  <div class="row row-cards">
+    <div class="row text-start row-back">
+      <a href="/">
+        <i class="fas fa-chevron-left"></i> Back To Homepage
+      </a>
+    </div>
+    <div class="card card-description">
+      {% if user.is_superuser %}
+      <div class="row">
+        <div class=" col col-12 col-sm-12 col-md-11 col-lg-2 plain-element">
+          <span class="section-header ">Common</span>
+
+        </div>
+      </div>
+
+      <div class="row plain-element">
+        <div class=" col col-12 col-sm-12 col-md-6 col-lg-3 plain-element">
+          <div class="row plain-element text-start">
+            <div class="input-field col col-sm-9 col-form">
+              <a href="{% url 'db_manager:db-upload' %}">
+                <div class="card menu-card">
+                  <h5><i class="fas fa-chevron-right"></i> DB Upload </h5>
+                </div>
+              </a>
+            </div>
+            <div class="input-field col col-sm-9 col-form">
+              <a href="{% url 'db_manager:db-download' %}">
+                <div class="card menu-card">
+                  <h5><i class="fas fa-chevron-right"></i> DB Download </h5>
+                </div>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
+
+

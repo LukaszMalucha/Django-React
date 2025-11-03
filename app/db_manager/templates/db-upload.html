@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<div class="dashboard-db-manager">
+  <div class="row row-cards">
+    <div class="row text-start row-back">
+      <a href="{% url 'db_manager:db-manager' %}">
+        <i class="fas fa-chevron-left"></i> Back To DB Manager
+      </a>
+    </div>
+    <div class="card card-description">
+      {% if user.is_superuser %}
+      <div class="row plain-element">
+        <div class=" col col-12 col-sm-12 col-md-8 col-lg-2 plain-element">
+          <div class=" col col-12 col-sm-12 col-md-8 col-lg-11 plain-element">
+            <span class="section-header ">Common</span>
+
+          </div>
+          <div class="row plain-element text-start">
+            <div class="input-field  col col-12 col-sm-12 col-form">
+              <a href="{% url 'db_manager:dataset-upload' dataset_type='categories' %}">
+                <div class="card menu-card">
+                  <h5><i class="fas fa-chevron-right"></i> Category Upload </h5>
+                </div>
+              </a>
+            </div>
+            <div class="input-field  col col-12 col-sm-12 col-form">
+              <a href="{% url 'db_manager:dataset-upload' dataset_type='subcategories' %}">
+                <div class="card menu-card">
+                  <h5><i class="fas fa-chevron-right"></i> Subcategory Upload </h5>
+                </div>
+              </a>
+            </div>
+            <div class="input-field  col col-12 col-sm-12 col-form">
+              <a href="{% url 'db_manager:dataset-upload' dataset_type='items' %}">
+                <div class="card menu-card">
+                  <h5><i class="fas fa-chevron-right"></i> Item Upload </h5>
+                </div>
+              </a>
+            </div>
+            <div class="input-field  col col-12 col-sm-12 col-form">
+              <a href="{% url 'db_manager:dataset-upload' dataset_type='medical supplies' %}">
+                <div class="card menu-card">
+                  <h5><i class="fas fa-chevron-right"></i> Medical Supplies </h5>
+                </div>
+              </a>
+            </div>
+            <div class="input-field  col col-12 col-sm-12 col-form">
+              <a href="{% url 'db_manager:dataset-upload' dataset_type='expiry dates' %}">
+                <div class="card menu-card">
+                  <h5><i class="fas fa-chevron-right"></i> Expiry Dates </h5>
+                </div>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+

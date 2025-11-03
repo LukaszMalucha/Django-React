@@ -1,0 +1,423 @@
+/*------------------------------------------------------------------------------
+    TOP NAVBAR
+------------------------------------------------------------------------------*/
+
+.navbar {
+    border-radius: 0px;
+}
+
+.top-navbar {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 300;
+    border: none;
+    height: 40px; /* Reduced from 50px */
+    min-height: 40px; /* Adjusted proportionally */
+    padding-left: 0%;
+    padding-right: 0.5%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    background-color: #161d26;
+    border: none;
+    margin: 0;
+}
+
+
+
+/*------------------------------------------------------------------------------
+    LEFT-SIDE HEADER AREA
+------------------------------------------------------------------------------*/
+
+
+.top-navbar .navbar-brand {
+    margin: 0px;
+    height: 24px; /* Adjusted proportionally */
+    float: left;
+    text-align: left;
+    padding: 0px;
+    font-weight: 500;
+    color: #ffffff;
+    background: transparent;
+    text-transform: uppercase;
+}
+
+.navbar-header {
+    width: auto;
+    margin-left: 0px;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #424650;
+    height: 26px; /* Adjusted proportionally */
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.navbar-header a {
+    font-size: 12px; /* Adjusted proportionally */
+    letter-spacing: 1.2px;
+    line-height: 26px;
+    margin-top: 0px;
+    font-weight: 400;
+    display: block;
+    color: #798b9a;
+}
+
+
+
+
+.navbar-brand .material-icons,
+.navbar-brand .fab {
+    float: left;
+    font-size: 16px; /* Adjusted proportionally */
+    margin-right: 5px;
+    margin-top: -3px;
+    letter-spacing: 1px;
+    height: auto;
+    background: #0077b5;
+    padding: 2px 2px 2px 2px; /* Adjusted proportionally */
+    color: #798b9a;
+    font-weight: normal;
+}
+
+.navbar-header:hover,
+.navbar-header:focus {
+	background: transparent;
+	color: #00539E;
+}
+
+
+.navbar-header a:hover {
+	text-decoration: none !important;
+}
+
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+	background-color: transparent;
+	outline: 0px;
+}
+
+
+.navbar-default .navbar-brand:hover {
+	color: #1da1f2;
+}
+
+.navbar-default .navbar-brand:hover .navbar-default .navbar-brand:focus {
+	color: #e5ebef;
+}
+
+
+
+/*------------------------------------------------------------------------------
+   MIDDLE SEARCHBOX
+------------------------------------------------------------------------------*/
+
+nav form {
+    height: 32px; /* Adjusted proportionally */
+    line-height: 32px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.searchbox-wrapper {
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+.btn-transparent {
+    position: absolute;
+    top: -1px;
+    left: 12px; /* Adjusted proportionally */
+    height: 32px; /* Adjusted proportionally */
+    color: #c6c6cd;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+.btn-transparent i {
+    font-size: 14px; /* Adjusted proportionally */
+}
+
+#searchbox {
+    border: 2px solid #424650; /* Adjusted proportionally */
+    border-radius: 6px; /* Adjusted proportionally */
+    width: 97.5%;
+    margin: auto;
+    padding: 3px 2px;
+    font-size: 12px; /* Adjusted proportionally */
+    background: #161d26;
+    height: 32px; /* Adjusted proportionally */
+    color: #202124;
+    letter-spacing: 0.3px;
+    transition: border-color 0.3s ease-in-out;
+    padding-left: 32px; /* Adjusted proportionally */
+}
+
+#searchbox::placeholder {
+    color: #c6c6cd !important;
+    font-style: italic;
+    font-size: 14px;
+    padding-left: 20px;
+}
+
+
+#searchbox:focus {
+    border-color: #b8e7ff;
+    outline: none;
+    color: white;
+}
+
+
+#searchbox:focus::placeholder {
+    color: #ffffff;
+}
+
+/*------------------------------------------------------------------------------
+    RIGHT SIDE LINKS
+------------------------------------------------------------------------------*/
+
+
+
+.top-navbar .navbar-right {
+    width: auto;
+    height: 100%;
+    line-height: 100%;
+    padding: 0px 0px;
+    color: #798b9a;
+    float: right !important;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 16px;
+  border-radius: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 7px;
+}
+
+.nav-link:hover {
+  color: #1da1f2;
+}
+
+.nav-button {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  width: auto;
+  background: none !important;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-button:hover,
+.nav-button:active,
+.nav-button:focus {
+  text-decoration: none;
+  color: #1da1f2;
+}
+
+.nav-button-active {
+    background-color: #50BB49 !important;
+    text-decoration: none;
+    color: #fff;
+    padding: 0px 12px;
+}
+
+.icon-link {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.icon-nav {
+    font-size: 20px;
+    color: #ffffff;
+    vertical-align: middle;
+    border-right: 1px solid #424650;
+    padding-right: 12px;
+    padding-left: 12px;
+    transition: color 0.3s ease-in-out;
+}
+
+
+.icon-link:last-child .icon-nav {
+    border-right: none;
+}
+
+
+.icon-medium {
+    position: relative;
+    font-size: 23px;
+    top: -1px;
+}
+
+
+.icon-link:hover .icon-nav {
+    color: #1da1f2;
+}
+
+/*------------------------------------------------------------------------------
+    QUICKNAV
+------------------------------------------------------------------------------*/
+
+.row-quicknav {
+    height: 40px;
+    border-bottom: 1px solid #d5dbdb;
+    padding: 0px 16px;
+    margin: 0;
+}
+
+.icon-menu {
+  background-color: #006ce0;
+  color: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin: 4px 2px 0px 2px;
+  cursor: pointer;
+}
+
+.icon-menu:hover,
+.icon-menu:active {
+  background-color: #004a9e;
+
+}
+
+
+/*------------------------------------------------------------------------------
+    MEDIA QUERIES
+------------------------------------------------------------------------------*/
+
+@media(max-width:1700px) {
+	.top-navbar {
+
+	}
+	.navbar-header {
+		width: 12%;
+	}
+}
+
+@media(max-width:1400px) {
+	.top-navbar {}
+}
+
+@media(max-width:1200px) {
+	.top-navbar {
+		padding-right: 1%;
+	}
+
+  .navbar-header {
+		width: 16%;
+	}
+}
+
+@media(max-width:1025px) {
+	.top-navbar {
+	}
+	.nav>li>a {
+		padding-right: 0px;
+	}
+
+
+	nav a.sidenav-trigger i {
+		height: 40px;
+		line-height: 40px;
+	}
+	#trigger {
+		position: relative;
+	}
+
+	nav a.sidenav-trigger i {
+  		height: 40px;
+  		line-height: 40px;
+  	}
+  	#trigger {
+  		position: relative;
+  	}
+
+    .navbar-header {
+  		width: 100%;
+  	}
+
+    .navbar-right {
+  	  display: none;
+  	}
+
+    .topnav {
+      display: block;
+    }
+
+     .topnav .navbar-brand {
+        width: 70%;
+    }
+
+    .navbar {
+      display: none;
+    }
+
+
+  	.btn-transparent {
+      position: absolute;
+      top: 1px;
+      right: -16px;
+    }
+
+}
+
+@media(max-width:900px) {
+
+  .navbar-header {
+		width: 20%;
+	}
+
+	.col-logo {
+	  display: none;
+	}
+
+}
+
+@media only screen and (max-width: 701px) {
+
+	.navbar-header {
+		width: 30%;
+	}
+
+	.navbar-right {
+	  display: none;
+	}
+
+
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+	.navbar-header {
+		width: 10%;
+	}
+
+	.navbar-brand strong{
+	  display: none;
+	}
+
+
+	.btn-transparent {
+    position: absolute;
+    top: 1px;
+    right: -16px;
+  }
+}

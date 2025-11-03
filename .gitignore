@@ -1,0 +1,14 @@
+*.pyc
+.~c9
+__pycache__?
+env.py
+.idea/*
+venv/*
+*.env
+*.jpg
+db.sqlite3
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

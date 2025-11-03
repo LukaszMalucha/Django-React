@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<div class="dashboard-db-manager">
+  <div class="row row-cards">
+    <div class="row text-start row-back">
+      <a href="{% url 'db_manager:db-download' %}">
+        <i class="fas fa-chevron-left"></i> Back To DB Download
+      </a>
+    </div>
+    <div class="card card-description">
+
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+
