@@ -4,7 +4,8 @@ __pycache__?
 env.py
 .idea/*
 venv/*
-*.env
+.env
+**/.env
 *.jpg
 db.sqlite3
 
