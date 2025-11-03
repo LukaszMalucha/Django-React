@@ -16,6 +16,6 @@ django-ses==4.1.0
 dj-rest-auth==7.0.1
 django-allauth==65.4.1
 django-auto-logout==0.5.1
-requests==2.32.2
+requests==2.32.4
 pandas==2.2.3
 django-csp==4.0b4
